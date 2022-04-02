@@ -57,7 +57,7 @@ app = Flask(__name__)
 
 middleware = FlaskMiddleware(
     app,
-    exporter=AzureExporter(connection_string="InstrumentationKey=[your-guid]"),
+    exporter=AzureExporter(connection_string="InstrumentationKey=c05add4a-e4b2-42b3-b48c-d5d14946934d;IngestionEndpoint=https://eastasia-0.in.applicationinsights.azure.com/"),
     sampler=ProbabilitySampler(rate=1.0)
 )
 
